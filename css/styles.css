@@ -26,6 +26,7 @@ body {
 }
 ul {
     margin: 0;
+    padding: 0;
 }
 
 img {
@@ -38,7 +39,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
-    outline: 2px solid tomato;
+    
 }
 
 /* Активная страница */
@@ -58,6 +59,9 @@ img {
 }
 
 /* Верхняя линия */
+.header-border {
+    border: 1px solid #ECECEC;
+}
 .header-nav {
     background-color:#FFFFFF;
 }
@@ -83,17 +87,14 @@ img {
 
 .logo-footer {
     display: block;
-    padding-top:124px;
+    padding-top:60px;
 
     font-family: Raleway,
     sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height:1.20;
-    
-    
-    
-
+       
 }
 
 .studio-footer {
@@ -125,6 +126,52 @@ margin-right: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* FlexBox-team */
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature-element {
+    width: 270px;
+    margin-right: 30px;
+    margin-bottom: 94px;
+}
+.feature-element:last-child {
+    margin-right: 0;
+} 
+
+/* FlexBox-work */
+.flex-work {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-item {
+    width: 370;
+    margin-right: 30px;
+}
+
+.work-item:last-child {
+    margin-right: 0;
+}
+
+/* FlexBox-team */
+
+.flex-team {
+    display: flex;
+    flex-wrap: wrap;
+}
+.developers {
+    width: 270px;
+    margin-right: 30px;
+    padding-bottom: 94px;
+}
+
+.developers:last-child {
+    margin-right: 0;
 }
 
 
@@ -281,6 +328,7 @@ margin-right: 50px;
     line-height: 1.18;
     margin-top: 30px;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .developers p {
@@ -289,6 +337,8 @@ margin-right: 50px;
     line-height:1.18px;
     margin-top: 10px;
     margin-bottom: 0;
+    text-align: center;
+    padding-bottom:20px ;
 }
 .developers img {
     margin-top: 50px;
@@ -299,9 +349,10 @@ margin-right: 50px;
 .footer {
     background-color:var(--bcg-color);
 
+
 }
 
-.footer-adres {
+.footer-paragraph {
     color:var(--section-text-color);
     font-weight: 400;
     font-size: 14px;
@@ -327,6 +378,10 @@ margin-right: 50px;
 
 address {
     font-style: normal;
+}
+
+.footer-adres {
+    padding-bottom:60px ;
 }
 
 /* Portfolio-css */
@@ -375,7 +430,7 @@ background-color: var(--accent-color);
 }
 
 .portfolio-img {
-    margin-top: 34px;
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -384,3 +439,44 @@ background-color: var(--accent-color);
     color: var(--accent-color);
 
 }
+
+/* FlexBox-portfolio */
+
+.flex-filtr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 34px;
+    
+}
+.filtr-element {
+    margin-right: 8px;
+    margin-bottom: 34px;
+}
+
+
+.prtf-element {
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;    
+    
+    
+}
+.flex-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.prtf-element:nth-child(3n) {
+    margin-right:0;
+}
+
+.prtf-element:nth-last-child(-n+3) {
+    margin-bottom: 94px;
+}
+
+
