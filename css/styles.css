@@ -491,6 +491,6 @@ background-color: var(--accent-color);
     margin-right:0;
 }
 
-.prtf-element:nth-child(7) {
+.prtf-element:nth-child(n+7) {
     margin-bottom: 0px;
 }
